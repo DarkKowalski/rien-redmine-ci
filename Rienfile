@@ -1,0 +1,16 @@
+Rien.configure do |config|
+  config.includes = ["app/**/*",
+                     "db/**/*",
+                     "lib/**/*"]
+  config.excludes = ["**/*/*.erb",
+                     "**/*/USAGE",
+                     "**/*/*.rdoc",
+                     "**/*/*.yml",
+                     "**/*/*.py",
+                     "**/*/README",
+                     "**/*/*LICENSE",
+                     "**/*/CHANGELOG",
+                     "lib/**/templates/**/*",
+                     "**/*/init.rb"]
+  config.output = "compiled-redmine"
+end
